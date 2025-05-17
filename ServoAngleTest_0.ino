@@ -15,6 +15,8 @@ void setup() {
   pwm.begin();
   pwm.setPWMFreq(50);
   delay(10);
+  pwm.setPWM(0, 0, angleToPulse(180));
+  delay(1000);
 
 }
 
